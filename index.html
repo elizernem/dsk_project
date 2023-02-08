@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>ДСК Столица</title>
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <div class="header__wrapper">
+        <img
+          class="header__logo"
+          src="img/DSK_logo.svg"
+          width="45"
+          height="43"
+          alt="Логотип ДСК Столица"
+        />
+        <form class="header__form">
+          <input
+            class="header__input"
+            type="text"
+            placeholder="Поиск по каталогу"
+          />
+          <button class="header__button" type="submit"></button>
+        </form>
+        <nav class="header__navigation">
+          <h2 class="visually-hidden">Навигация.</h2>
+          <button class="header__toggle" type="button"></button>
+        </nav>
+      </div>
+      <section class="breadcrumbs">
+        <h2 class="visually-hidden">Путь к странице.</h2>
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Каталог товаров</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Частное домостроение</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Плиты перекрытия</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Плиты ПК</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link breadcrumbs__link--current" href="#"
+              >Пк 63-12-8</a
+            >
+          </li>
+        </ul>
+      </section>
+    </header>
+    <main class="main-container">
+      <section class="product">
+        <h1 class="product__title">ПК 63-12-8</h1>
+        <ul class="product__rating rating">
+          <li class="rating__item rating__item--full"></li>
+          <li class="rating__item rating__item--full"></li>
+          <li class="rating__item rating__item--full"></li>
+          <li class="rating__item rating__item--half"></li>
+          <li class="rating__item rating__item--empty"></li>
+        </ul>
+        <ul class="product__info info">
+          <li class="info__item">
+            <a class="info__link info__link--current" href="#">Все о товаре</a>
+          </li>
+          <li class="info__item">
+            <a class="info__link" href="#">Характеристики</a>
+          </li>
+          <li class="info__item">
+            <a class="info__link" href="#">Обзор</a>
+          </li>
+        </ul>
+        <div class="product__slider-wrapper">
+          <input
+            class="product__input"
+            type="radio"
+            name="point"
+            id="slide1"
+            checked
+          />
+          <input class="product__input" type="radio" name="point" id="slide2" />
+          <input class="product__input" type="radio" name="point" id="slide3" />
+          <input class="product__input" type="radio" name="point" id="slide4" />
+          <input class="product__input" type="radio" name="point" id="slide5" />
+          <input class="product__input" type="radio" name="point" id="slide6" />
+          <div class="product__slider">
+            <div class="product__slide slide1"></div>
+            <div class="product__slide slide2"></div>
+            <div class="product__slide slide3"></div>
+            <div class="product__slide slide4"></div>
+            <div class="product__slide slide5"></div>
+            <div class="product__slide slide6"></div>
+          </div>
+          <div class="product__controls">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+            <label for="slide5"></label>
+            <label for="slide6"></label>
+          </div>
+        </div>
+        <div class="product__details description">
+          <h2 class="description__title">Характеристики</h2>
+          <dl class="description__list">
+            <div class="description__wrapper">
+              <dt class="description__term">Наименование:</dt>
+              <dd class="description__definition">Плиты ПК</dd>
+            </div>
+            <div class="description__wrapper">
+              <dt class="description__term">Завод-производитель:</dt>
+              <dd class="description__definition">Москва и МО</dd>
+            </div>
+            <div class="description__wrapper">
+              <dt class="description__term">Технические условия:</dt>
+              <dd class="description__definition">ГОСТ 9561-91</dd>
+            </div>
+            <div class="description__wrapper">
+              <dt class="description__term">Длина, мм:</dt>
+              <dd class="description__definition">6300</dd>
+            </div>
+            <div class="description__wrapper">
+              <dt class="description__term">Ширина, мм:</dt>
+              <dd class="description__definition">1200</dd>
+            </div>
+            <div class="description__wrapper">
+              <dt class="description__term">Высота, мм:</dt>
+              <dd class="description__definition">220</dd>
+            </div>
+            <div class="description__wrapper">
+              <dt class="description__term">
+                Расчетная нагрузка, кг/м<sup>2</sup>:
+              </dt>
+              <dd class="description__definition">800</dd>
+            </div>
+            <div class="description__wrapper">
+              <dt class="description__term">Вес 1 шт., т:</dt>
+              <dd class="description__definition">1, 755</dd>
+            </div>
+          </dl>
+        </div>
+        <aside class="product__purchase purchase">
+          <div class="purchase__main-container">
+            <h2 class="visually-hidden">Купить товар.</h2>
+            <span class="purchase__price purchase__price--main"
+              >484,00 ₽/шт.</span
+            >
+            <span class="purchase__price">154,88 ₽/м<sup>2</sup></span>
+            <dl class="purchase__list article">
+              <dt class="article__term">Артикул:</dt>
+              <dd class="article__definition">0543600</dd>
+            </dl>
+            <div class="purchase__container">
+              <form class="purchase__form">
+                <button
+                  class="purchase__input-button purchase__input-button--minus"
+                  type="button"
+                ></button>
+                <input
+                  class="purchase__input"
+                  type="text"
+                  value="10 шт."
+                  readonly
+                />
+                <button
+                  class="purchase__input-button purchase__input-button--plus"
+                  type="button"
+                ></button>
+                <button
+                  class="purchase__button button button--submit"
+                  type="submit"
+                >
+                  В корзину
+                </button>
+              </form>
+              <div class="purchase__wrapper">
+                <button
+                  class="purchase__button button button--favorite"
+                  type="button"
+                >
+                  В избранное
+                </button>
+                <a class="purchase__tel button button--tel" href="tel:+79999999"
+                  >Позвонить</a
+                >
+              </div>
+              <div class="purchase__wrapper messenger">
+                <span class="messenger__note"
+                  >Также для вашего удобства<br />
+                  мы доступны в мессенджерах</span
+                >
+                <ul class="messenger__list">
+                  <li class="messenger__item messenger__item--whatsapp">
+                    <a href="https://wa.me/number"></a>
+                  </li>
+                  <li class="messenger__item messenger__item--viber">
+                    <a href="viber://chat?number=7903xxxxxxx"></a>
+                  </li>
+                  <li class="messenger__item messenger__item--telegram">
+                    <a href="tg://resolve?domain=name"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </section>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>

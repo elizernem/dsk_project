@@ -1,0 +1,31 @@
+.description {
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.description__list {
+  font-size: 16px;
+  margin: 0;
+}
+
+.description__title {
+  font-size: 26px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.description__wrapper:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.description__term {
+  display: inline;
+  color: #656565;
+}
+
+.description__definition {
+  display: inline;
+  margin: 0;
+  color: #000;
+  font-weight: 700;
+}

@@ -1,0 +1,42 @@
+@import "./mixins/reset-list";
+
+.messenger {
+  align-items: center;
+}
+
+.messenger__note {
+  font-size: 14px;
+  width: 130%;
+}
+
+.messenger__list {
+  @include reset-list;
+  display: flex;
+  margin-left: 40px;
+  justify-content: space-between;
+}
+
+.messenger__item {
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: 34px 34px;
+  background-position: center;
+  width: 34px;
+  height: 34px;
+
+  &--whatsapp {
+    background-image: url("../img/WhatsApp.png");
+  }
+
+  &--viber {
+    background-image: url("../img/Viber.png");
+  }
+
+  &--telegram {
+    background-image: url("../img/Telegram.png");
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+}

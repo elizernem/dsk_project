@@ -1,0 +1,46 @@
+@import "./mixins/reset-list";
+@import "./mixins/reset-link";
+
+.breadcrumbs__list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.breadcrumbs__item {
+  position: relative;
+}
+
+.breadcrumbs__item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -12px;
+  transform: translateY(-50%);
+  display: block;
+  background-image: url("../img/radio_checked.png");
+  background-repeat: no-repeat;
+  width: 8px;
+  height: 8px;
+  background-size: 8px 8px;
+}
+
+.breadcrumbs__link {
+  @include reset-link;
+  font-size: 16px;
+  color: #d5d5d5;
+
+  &--current {
+    font-weight: 700;
+    color: #000;
+  }
+
+  &:hover {
+    color: #656565;
+  }
+
+  &:active {
+    color: #000;
+  }
+}

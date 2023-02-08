@@ -1,0 +1,46 @@
+@import "./mixins/reset-list";
+@import "./mixins/reset-link";
+
+.info {
+  @include reset-list;
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 20px 0;
+  gap: 10%;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.info__item {
+  width: 40%;
+}
+
+.info__item:first-child {
+  padding-left: 10px;
+}
+
+.info__link {
+  @include reset-link;
+  font-size: 16px;
+  font-weight: 700;
+  white-space: nowrap;
+  color: #656565;
+  text-transform: uppercase;
+
+  &--current {
+    color: #216fad;
+    padding-bottom: 19px;
+    border-bottom: 3px solid #216fad;
+  }
+
+  &:hover {
+    color: #000;
+  }
+
+  &:active {
+    color: #fff;
+  }
+}

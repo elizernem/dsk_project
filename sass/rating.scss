@@ -1,0 +1,30 @@
+@import "./mixins/reset-list";
+
+.rating {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.rating__item {
+  width: 20px;
+  height: 20px;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--full {
+    background-image: url("../img/rating_full.png");
+  }
+
+  &--half {
+    background-image: url("../img/rating_half.png");
+  }
+
+  &--empty {
+    background-image: url("../img/rating_empty.png");
+  }
+}

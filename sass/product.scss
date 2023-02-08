@@ -1,0 +1,101 @@
+.product__title {
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+.product__slider-wrapper {
+  position: relative;
+  height: 345px;
+  width: 355px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.product__slider {
+  position: relative;
+  height: inherit;
+  width: inherit;
+  overflow: hidden;
+}
+
+.product__slider-wrapper > input {
+  display: none;
+}
+
+.product__slide {
+  height: inherit;
+  opacity: 0;
+  position: absolute;
+  width: inherit;
+  background-repeat: no-repeat;
+}
+
+.slide1 {
+  background-image: url("../img/slab.png");
+}
+.slide2 {
+  background-color: pink;
+}
+.slide3 {
+  background-color: yellowgreen;
+}
+.slide4 {
+  background-color: tomato;
+}
+.slide5 {
+  background-color: orange;
+}
+
+.slide6 {
+  background-color: violet;
+}
+
+.product__slider-wrapper .product__controls {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 15px;
+  background-color: #dad4ce;
+  padding: 2px;
+  border-radius: 10px;
+}
+
+.product__slider-wrapper label {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-image: url(../img/radio.png);
+  margin: 0 2px;
+}
+
+.product__slider-wrapper label:hover,
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3),
+#slide4:checked ~ .controls label:nth-of-type(4),
+#slide5:checked ~ .controls label:nth-of-type(5),
+#slide6:checked ~ .controls label:nth-of-type(6) {
+  background-image: url("../img/radio_checked.png");
+}
+
+// .product__slide {
+//   height: inherit;
+//   opacity: 0;
+//   position: absolute;
+//   width: inherit;
+//   background-repeat: no-repeat;
+// }
+
+#slide1:checked ~ .product__slider > .slide1,
+#slide2:checked ~ .product__slider > .slide2,
+#slide3:checked ~ .product__slider > .slide3,
+#slide4:checked ~ .product__slider > .slide4,
+#slide5:checked ~ .product__slider > .slide5,
+#slide6:checked ~ .product__slider > .slide6 {
+  opacity: 1;
+}
