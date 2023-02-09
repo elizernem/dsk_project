@@ -1,5 +1,5 @@
 @import "./mixins/reset-list";
-@import "./mixins/reset-link";
+// @import "./mixins/reset-link";
 
 .info {
   @include reset-list;
@@ -8,7 +8,8 @@
   background-color: #f6f6f6;
   display: flex;
   flex-wrap: nowrap;
-  padding: 20px 0;
+  padding: 0;
+  padding-top: 20px;
   gap: 10%;
   overflow: hidden;
   margin-bottom: 10px;
@@ -19,24 +20,26 @@
 }
 
 .info__link {
-  @include reset-link;
+  // @include reset-link;
   font-size: 16px;
   font-weight: 700;
   white-space: nowrap;
   color: #656565;
   text-transform: uppercase;
+  border: none;
+  background-color: transparent;
 
   &--current {
     color: #216fad;
-    padding-bottom: 19px;
+    padding-bottom: 20px;
     border-bottom: 3px solid #216fad;
   }
 
   &:hover {
-    color: #000;
+    color: #216fad;
   }
 
   &:active {
-    color: #fff;
+    color: #000;
   }
 }
