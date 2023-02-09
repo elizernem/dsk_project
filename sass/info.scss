@@ -1,5 +1,4 @@
 @import "./mixins/reset-list";
-// @import "./mixins/reset-link";
 
 .info {
   @include reset-list;
@@ -20,14 +19,14 @@
 }
 
 .info__link {
-  // @include reset-link;
+  cursor: pointer;
   font-size: 16px;
   font-weight: 700;
+  border: none;
+  background-color: transparent;
   white-space: nowrap;
   color: #656565;
   text-transform: uppercase;
-  border: none;
-  background-color: transparent;
 
   &--current {
     color: #216fad;
